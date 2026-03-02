@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#chapter-04-mbti-" class="md-skip">
+        <a href="#chapter-04-part-2" class="md-skip">
           콘텐츠로 이동
         </a>
       
@@ -662,7 +662,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🎯 이 장에서 배우는 것
+        🎯 이 장의 학습 목표
       
     </span>
   </a>
@@ -671,6 +671,17 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 미리 알아야 할 것
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
         📚 핵심 개념
@@ -685,7 +696,7 @@
   <a href="#csv" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념: CSV 파일과 데이터 수집
+        개념: CSV 파일이란?
       
     </span>
   </a>
@@ -698,7 +709,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
         🔨 따라하기
@@ -713,7 +724,7 @@
   <a href="#step-1-csv" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 1: 구글 폼 데이터를 CSV로 내보내기
+        Step 1: 구글 폼에서 CSV로 내보내기
       
     </span>
   </a>
@@ -724,7 +735,7 @@
   <a href="#step-2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 2: 코랩에 업로드하고 시각화하기
+        Step 2: 코랩에 업로드하고 데이터 읽기
       
     </span>
   </a>
@@ -737,65 +748,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📝 실습1 전체 코드
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#import-pandas-as-pd-import-matplotlibpyplot-as-plt-csv-df-pdread_csvmbti_datacsv-printdfhead-mbti-mbti_counts-dfmbtivalue_counts-pltfigurefigsize8-6-pltpiembti_counts-labelsmbti_countsindex-autopct11f-plttitle-mbti-fontsize15-pltshow" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        import pandas as pd import matplotlib.pyplot as plt # CSV 파일 불러오기 df = pd.read_csv(&#39;mbti_data.csv&#39;) # 데이터 확인 print(df.head()) # MBTI 빈도 계산 mbti_counts = df[&#39;MBTI&#39;].value_counts() # 시각화 plt.figure(figsize=(8, 6)) plt.pie(mbti_counts, labels=mbti_counts.index, autopct=&#39;%1.1f%%&#39;) plt.title(&#39;우리 반 MBTI 분포&#39;, fontsize=15) plt.show()
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📝 실습2 전체 코드
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#import-pandas-as-pd-data-mbti-istj-enfp-intp-esfj-infp-entj-isfp-enfp-16-15-16-15-16-15-16-15-df-pddataframedata-print-printdf-printn-40-n-mbti-print-mbti-printdfmbtivalue_counts-printn-40-n-printf-lendf-printf-mbti-dfmbtinunique" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        import pandas as pd # 샘플 데이터 생성 data = { &#39;이름&#39;: [&#39;민수&#39;, &#39;지영&#39;, &#39;준호&#39;, &#39;서연&#39;, &#39;동현&#39;, &#39;예린&#39;, &#39;태희&#39;, &#39;승민&#39;], &#39;MBTI&#39;: [&#39;ISTJ&#39;, &#39;ENFP&#39;, &#39;INTP&#39;, &#39;ESFJ&#39;, &#39;INFP&#39;, &#39;ENTJ&#39;, &#39;ISFP&#39;, &#39;ENFP&#39;], &#39;나이&#39;: [16, 15, 16, 15, 16, 15, 16, 15] } df = pd.DataFrame(data) # 데이터 확인 print(&quot;📋 우리 반 데이터:&quot;) print(df) print(&quot;\n&quot; + &quot;=&quot;*40 + &quot;\n&quot;) # MBTI 분포 분석 print(&quot;📊 MBTI 유형별 분포:&quot;) print(df[&#39;MBTI&#39;].value_counts()) print(&quot;\n&quot; + &quot;=&quot;*40 + &quot;\n&quot;) # 요약 정보 print(f&quot;✅ 전체 학생 수: {len(df)}명&quot;) print(f&quot;✅ MBTI 종류: {df[&#39;MBTI&#39;].nunique()}가지&quot;)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ⚠️ 주의할 점
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ✅ 점검하기
+        📝 전체 코드
       
     </span>
   </a>
@@ -806,7 +762,29 @@
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔗 다음 장 미리보기
+        ⚠️ 주의할 점
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ 점검하기
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 다음 장 미리보기
       
     </span>
   </a>
@@ -1099,7 +1077,7 @@
   <a href="#_1" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🎯 이 장에서 배우는 것
+        🎯 이 장의 학습 목표
       
     </span>
   </a>
@@ -1108,6 +1086,17 @@
       
         <li class="md-nav__item">
   <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        📚 미리 알아야 할 것
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
     <span class="md-ellipsis">
       
         📚 핵심 개념
@@ -1122,7 +1111,7 @@
   <a href="#csv" class="md-nav__link">
     <span class="md-ellipsis">
       
-        개념: CSV 파일과 데이터 수집
+        개념: CSV 파일이란?
       
     </span>
   </a>
@@ -1135,7 +1124,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#_3" class="md-nav__link">
+  <a href="#_4" class="md-nav__link">
     <span class="md-ellipsis">
       
         🔨 따라하기
@@ -1150,7 +1139,7 @@
   <a href="#step-1-csv" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 1: 구글 폼 데이터를 CSV로 내보내기
+        Step 1: 구글 폼에서 CSV로 내보내기
       
     </span>
   </a>
@@ -1161,7 +1150,7 @@
   <a href="#step-2" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Step 2: 코랩에 업로드하고 시각화하기
+        Step 2: 코랩에 업로드하고 데이터 읽기
       
     </span>
   </a>
@@ -1174,65 +1163,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#1" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📝 실습1 전체 코드
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#import-pandas-as-pd-import-matplotlibpyplot-as-plt-csv-df-pdread_csvmbti_datacsv-printdfhead-mbti-mbti_counts-dfmbtivalue_counts-pltfigurefigsize8-6-pltpiembti_counts-labelsmbti_countsindex-autopct11f-plttitle-mbti-fontsize15-pltshow" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        import pandas as pd import matplotlib.pyplot as plt # CSV 파일 불러오기 df = pd.read_csv(&#39;mbti_data.csv&#39;) # 데이터 확인 print(df.head()) # MBTI 빈도 계산 mbti_counts = df[&#39;MBTI&#39;].value_counts() # 시각화 plt.figure(figsize=(8, 6)) plt.pie(mbti_counts, labels=mbti_counts.index, autopct=&#39;%1.1f%%&#39;) plt.title(&#39;우리 반 MBTI 분포&#39;, fontsize=15) plt.show()
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#2" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        📝 실습2 전체 코드
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#import-pandas-as-pd-data-mbti-istj-enfp-intp-esfj-infp-entj-isfp-enfp-16-15-16-15-16-15-16-15-df-pddataframedata-print-printdf-printn-40-n-mbti-print-mbti-printdfmbtivalue_counts-printn-40-n-printf-lendf-printf-mbti-dfmbtinunique" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        import pandas as pd # 샘플 데이터 생성 data = { &#39;이름&#39;: [&#39;민수&#39;, &#39;지영&#39;, &#39;준호&#39;, &#39;서연&#39;, &#39;동현&#39;, &#39;예린&#39;, &#39;태희&#39;, &#39;승민&#39;], &#39;MBTI&#39;: [&#39;ISTJ&#39;, &#39;ENFP&#39;, &#39;INTP&#39;, &#39;ESFJ&#39;, &#39;INFP&#39;, &#39;ENTJ&#39;, &#39;ISFP&#39;, &#39;ENFP&#39;], &#39;나이&#39;: [16, 15, 16, 15, 16, 15, 16, 15] } df = pd.DataFrame(data) # 데이터 확인 print(&quot;📋 우리 반 데이터:&quot;) print(df) print(&quot;\n&quot; + &quot;=&quot;*40 + &quot;\n&quot;) # MBTI 분포 분석 print(&quot;📊 MBTI 유형별 분포:&quot;) print(df[&#39;MBTI&#39;].value_counts()) print(&quot;\n&quot; + &quot;=&quot;*40 + &quot;\n&quot;) # 요약 정보 print(f&quot;✅ 전체 학생 수: {len(df)}명&quot;) print(f&quot;✅ MBTI 종류: {df[&#39;MBTI&#39;].nunique()}가지&quot;)
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#_4" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        ⚠️ 주의할 점
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#_5" class="md-nav__link">
     <span class="md-ellipsis">
       
-        ✅ 점검하기
+        📝 전체 코드
       
     </span>
   </a>
@@ -1243,7 +1177,29 @@
   <a href="#_6" class="md-nav__link">
     <span class="md-ellipsis">
       
-        🔗 다음 장 미리보기
+        ⚠️ 주의할 점
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ✅ 점검하기
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        🚀 다음 장 미리보기
       
     </span>
   </a>
@@ -1267,119 +1223,105 @@
 
 
 
-<h1 id="chapter-04-mbti-">Chapter 04. 오늘 우리 반의 MBTI - 실시간 데이터 수집과 분석<a class="headerlink" href="#chapter-04-mbti-" title="Permanent link">&para;</a></h1>
-<h2 id="_1">🎯 이 장에서 배우는 것<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
-<ul class="task-list">
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 구글 폼으로 수집한 데이터를 CSV 파일로 내보낼 수 있다</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> CSV 파일을 코랩에 업로드하고 불러올 수 있다</li>
-<li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> 범주형 데이터를 시각화할 수 있다</li>
+<h1 id="chapter-04-part-2">Chapter 04 - Part 2<a class="headerlink" href="#chapter-04-part-2" title="Permanent link">&para;</a></h1>
+<h2 id="_1">🎯 이 장의 학습 목표<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<ul>
+<li>구글 폼으로 수집한 MBTI 데이터를 CSV 파일로 내보낼 수 있어요</li>
+<li>코랩에 데이터를 업로드하고 범주형 데이터를 시각화할 수 있어요</li>
+<li><strong>예상 학습 시간</strong>: 약 6분</li>
 </ul>
-<p><strong>예상 학습 시간</strong>: 약 6분</p>
+<h2 id="_2">📚 미리 알아야 할 것<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<p>이전 장에서 우리는 구글 폼으로 설문을 만들고 실시간 데이터를 모았어요. 이번에는 그 데이터를 분석하기 위해 파일로 준비하는 과정을 배웁니다!</p>
 <hr />
-<h2 id="_2">📚 핵심 개념<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
-<h3 id="csv">개념: CSV 파일과 데이터 수집<a class="headerlink" href="#csv" title="Permanent link">&para;</a></h3>
-<p><strong>비유로 이해하기</strong>: CSV 파일은 마치 반 친구들의 정보를 적은 출석부와 같아요. 각 줄이 한 명의 정보이고, 콤마(,)로 구분된 칸마다 이름, MBTI 같은 내용이 적혀있죠.</p>
-<p><strong>정의</strong>: CSV(Comma-Separated Values)는 데이터를 콤마로 구분해서 저장하는 텍스트 파일 형식입니다.</p>
-<p><strong>예시</strong>:
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>이름,MBTI
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>지훈,ENFP
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>서연,ISTJ
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>민준,INFJ
+<h2 id="_3">📚 핵심 개념<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="csv">개념: CSV 파일이란?<a class="headerlink" href="#csv" title="Permanent link">&para;</a></h3>
+<p><strong>CSV</strong>는 마치 엑셀 표를 일반 텍스트로 저장한 것처럼 생각하면 돼요. 각 데이터가 쉼표로 구분되어 있어서 프로그래밍으로 쉽게 읽을 수 있답니다.</p>
+<p><strong>구체적으로</strong>:
+- 이름, MBTI, 성별 같은 항목들이 쉼표로 구분됨
+- 코랩(Colab)이나 파이썬이 바로 읽을 수 있는 형식
+- 아주 가볍고 빠르게 처리됨</p>
+<p><strong>실제 모습</strong>:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>이름,MBTI,성별
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>김철수,ENFP,남
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>이영희,ISTJ,여
 </span></code></pre></div></p>
 <hr />
-<h2 id="_3">🔨 따라하기<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
-<h3 id="step-1-csv">Step 1: 구글 폼 데이터를 CSV로 내보내기<a class="headerlink" href="#step-1-csv" title="Permanent link">&para;</a></h3>
+<h2 id="_4">🔨 따라하기<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="step-1-csv">Step 1: 구글 폼에서 CSV로 내보내기<a class="headerlink" href="#step-1-csv" title="Permanent link">&para;</a></h3>
+<p><strong>구글 폼 응답 탭</strong>에서:</p>
 <ol>
-<li>구글 폼 응답 화면에서 <strong>스프레드시트 만들기</strong> 클릭</li>
-<li>스프레드시트에서 <strong>파일 → 다운로드 → CSV</strong> 선택</li>
-<li>다운로드된 파일명을 <code>mbti_data.csv</code>로 변경</li>
+<li><strong>응답 탭</strong> 클릭 → <strong>스프레드시트 아이콘</strong> 클릭</li>
+<li>"새 스프레드시트 만들기" 선택</li>
+<li>생성된 시트 <strong>우측 상단 ⋮</strong> → <strong>CSV 형식으로 다운로드</strong></li>
 </ol>
-<h3 id="step-2">Step 2: 코랩에 업로드하고 시각화하기<a class="headerlink" href="#step-2" title="Permanent link">&para;</a></h3>
-<p><strong>코드</strong>:
+<blockquote>
+<p>✅ <strong>체크포인트</strong>: <code>응답 (1).csv</code> 같은 파일이 다운로드되었나요?</p>
+</blockquote>
+<h3 id="step-2">Step 2: 코랩에 업로드하고 데이터 읽기<a class="headerlink" href="#step-2" title="Permanent link">&para;</a></h3>
 <div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="c1"># 파일 업로드 (좌측 폴더 아이콘에서 드래그)</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;mbti_data.csv&#39;</span><span class="p">)</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="c1"># MBTI 분포 세기</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="n">mbti_counts</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;MBTI&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="c1"># 파이 차트로 시각화</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="n">plt</span><span class="o">.</span><span class="n">pie</span><span class="p">(</span><span class="n">mbti_counts</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">mbti_counts</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">autopct</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%1.1f%%</span><span class="s1">&#39;</span><span class="p">)</span>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;우리 반 MBTI 분포&#39;</span><span class="p">)</span>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</span></code></pre></div></p>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="c1"># 로컬 파일 업로드 (왼쪽 파일 탭에서 드래그)</span>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;응답 (1).csv&#39;</span><span class="p">)</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="c1"># 첫 5줄 확인</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</span></code></pre></div>
 <p><strong>실행 결과</strong>:
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>우리 반의 MBTI 분포를 보여주는 파이 차트가 나타납니다!
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>ENFP: 25.0%, ISTJ: 20.0% 같은 식으로 비율이 표시돼요.
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>     이름   MBTI  성별
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>0   김철수   ENFP   남
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>1   이영희   ISTJ   여
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>2   박민수   INFP   남
 </span></code></pre></div></p>
 <hr />
-<h2 id="1">📝 실습1 전체 코드<a class="headerlink" href="#1" title="Permanent link">&para;</a></h2>
-<h2 id="import-pandas-as-pd-import-matplotlibpyplot-as-plt-csv-df-pdread_csvmbti_datacsv-printdfhead-mbti-mbti_counts-dfmbtivalue_counts-pltfigurefigsize8-6-pltpiembti_counts-labelsmbti_countsindex-autopct11f-plttitle-mbti-fontsize15-pltshow"><div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<h2 id="_5">📝 전체 코드<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
 </span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="kn">import</span><span class="w"> </span><span class="nn">matplotlib.pyplot</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">plt</span>
 </span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># CSV 파일 불러오기</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;mbti_data.csv&#39;</span><span class="p">)</span>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># 1. 데이터 읽기</span>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;응답 (1).csv&#39;</span><span class="p">)</span>
 </span><span id="__span-3-6"><a id="__codelineno-3-6" name="__codelineno-3-6" href="#__codelineno-3-6"></a>
-</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="c1"># 데이터 확인</span>
-</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">())</span>
+</span><span id="__span-3-7"><a id="__codelineno-3-7" name="__codelineno-3-7" href="#__codelineno-3-7"></a><span class="c1"># 2. MBTI 빈도 계산</span>
+</span><span id="__span-3-8"><a id="__codelineno-3-8" name="__codelineno-3-8" href="#__codelineno-3-8"></a><span class="n">mbti_count</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;MBTI&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
 </span><span id="__span-3-9"><a id="__codelineno-3-9" name="__codelineno-3-9" href="#__codelineno-3-9"></a>
-</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="c1"># MBTI 빈도 계산</span>
-</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="n">mbti_counts</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;MBTI&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
-</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a>
-</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="c1"># 시각화</span>
-</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
-</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="n">plt</span><span class="o">.</span><span class="n">pie</span><span class="p">(</span><span class="n">mbti_counts</span><span class="p">,</span> <span class="n">labels</span><span class="o">=</span><span class="n">mbti_counts</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">autopct</span><span class="o">=</span><span class="s1">&#39;</span><span class="si">%1.1f%%</span><span class="s1">&#39;</span><span class="p">)</span>
-</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;우리 반 MBTI 분포&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
-</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</span></code></pre></div><a class="headerlink" href="#import-pandas-as-pd-import-matplotlibpyplot-as-plt-csv-df-pdread_csvmbti_datacsv-printdfhead-mbti-mbti_counts-dfmbtivalue_counts-pltfigurefigsize8-6-pltpiembti_counts-labelsmbti_countsindex-autopct11f-plttitle-mbti-fontsize15-pltshow" title="Permanent link">&para;</a></h2>
-<h2 id="2">📝 실습2 전체 코드<a class="headerlink" href="#2" title="Permanent link">&para;</a></h2>
-<h2 id="import-pandas-as-pd-data-mbti-istj-enfp-intp-esfj-infp-entj-isfp-enfp-16-15-16-15-16-15-16-15-df-pddataframedata-print-printdf-printn-40-n-mbti-print-mbti-printdfmbtivalue_counts-printn-40-n-printf-lendf-printf-mbti-dfmbtinunique"><div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="c1"># 샘플 데이터 생성</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="n">data</span> <span class="o">=</span> <span class="p">{</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    <span class="s1">&#39;이름&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;민수&#39;</span><span class="p">,</span> <span class="s1">&#39;지영&#39;</span><span class="p">,</span> <span class="s1">&#39;준호&#39;</span><span class="p">,</span> <span class="s1">&#39;서연&#39;</span><span class="p">,</span> <span class="s1">&#39;동현&#39;</span><span class="p">,</span> <span class="s1">&#39;예린&#39;</span><span class="p">,</span> <span class="s1">&#39;태희&#39;</span><span class="p">,</span> <span class="s1">&#39;승민&#39;</span><span class="p">],</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>    <span class="s1">&#39;MBTI&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;ISTJ&#39;</span><span class="p">,</span> <span class="s1">&#39;ENFP&#39;</span><span class="p">,</span> <span class="s1">&#39;INTP&#39;</span><span class="p">,</span> <span class="s1">&#39;ESFJ&#39;</span><span class="p">,</span> <span class="s1">&#39;INFP&#39;</span><span class="p">,</span> <span class="s1">&#39;ENTJ&#39;</span><span class="p">,</span> <span class="s1">&#39;ISFP&#39;</span><span class="p">,</span> <span class="s1">&#39;ENFP&#39;</span><span class="p">],</span>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>    <span class="s1">&#39;나이&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">16</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">15</span><span class="p">]</span>
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="p">}</span>
-</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a>
-</span><span id="__span-4-10"><a id="__codelineno-4-10" name="__codelineno-4-10" href="#__codelineno-4-10"></a><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
-</span><span id="__span-4-11"><a id="__codelineno-4-11" name="__codelineno-4-11" href="#__codelineno-4-11"></a>
-</span><span id="__span-4-12"><a id="__codelineno-4-12" name="__codelineno-4-12" href="#__codelineno-4-12"></a><span class="c1"># 데이터 확인</span>
-</span><span id="__span-4-13"><a id="__codelineno-4-13" name="__codelineno-4-13" href="#__codelineno-4-13"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;📋 우리 반 데이터:&quot;</span><span class="p">)</span>
-</span><span id="__span-4-14"><a id="__codelineno-4-14" name="__codelineno-4-14" href="#__codelineno-4-14"></a><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
-</span><span id="__span-4-15"><a id="__codelineno-4-15" name="__codelineno-4-15" href="#__codelineno-4-15"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">40</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-</span><span id="__span-4-16"><a id="__codelineno-4-16" name="__codelineno-4-16" href="#__codelineno-4-16"></a>
-</span><span id="__span-4-17"><a id="__codelineno-4-17" name="__codelineno-4-17" href="#__codelineno-4-17"></a><span class="c1"># MBTI 분포 분석</span>
-</span><span id="__span-4-18"><a id="__codelineno-4-18" name="__codelineno-4-18" href="#__codelineno-4-18"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;📊 MBTI 유형별 분포:&quot;</span><span class="p">)</span>
-</span><span id="__span-4-19"><a id="__codelineno-4-19" name="__codelineno-4-19" href="#__codelineno-4-19"></a><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;MBTI&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">value_counts</span><span class="p">())</span>
-</span><span id="__span-4-20"><a id="__codelineno-4-20" name="__codelineno-4-20" href="#__codelineno-4-20"></a><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span> <span class="o">+</span> <span class="s2">&quot;=&quot;</span><span class="o">*</span><span class="mi">40</span> <span class="o">+</span> <span class="s2">&quot;</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
-</span><span id="__span-4-21"><a id="__codelineno-4-21" name="__codelineno-4-21" href="#__codelineno-4-21"></a>
-</span><span id="__span-4-22"><a id="__codelineno-4-22" name="__codelineno-4-22" href="#__codelineno-4-22"></a><span class="c1"># 요약 정보</span>
-</span><span id="__span-4-23"><a id="__codelineno-4-23" name="__codelineno-4-23" href="#__codelineno-4-23"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;✅ 전체 학생 수: </span><span class="si">{</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="si">}</span><span class="s2">명&quot;</span><span class="p">)</span>
-</span><span id="__span-4-24"><a id="__codelineno-4-24" name="__codelineno-4-24" href="#__codelineno-4-24"></a><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;✅ MBTI 종류: </span><span class="si">{</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;MBTI&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">nunique</span><span class="p">()</span><span class="si">}</span><span class="s2">가지&quot;</span><span class="p">)</span>
-</span></code></pre></div><a class="headerlink" href="#import-pandas-as-pd-data-mbti-istj-enfp-intp-esfj-infp-entj-isfp-enfp-16-15-16-15-16-15-16-15-df-pddataframedata-print-printdf-printn-40-n-mbti-print-mbti-printdfmbtivalue_counts-printn-40-n-printf-lendf-printf-mbti-dfmbtinunique" title="Permanent link">&para;</a></h2>
-<h2 id="_4">⚠️ 주의할 점<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+</span><span id="__span-3-10"><a id="__codelineno-3-10" name="__codelineno-3-10" href="#__codelineno-3-10"></a><span class="c1"># 3. 막대 그래프로 시각화</span>
+</span><span id="__span-3-11"><a id="__codelineno-3-11" name="__codelineno-3-11" href="#__codelineno-3-11"></a><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+</span><span id="__span-3-12"><a id="__codelineno-3-12" name="__codelineno-3-12" href="#__codelineno-3-12"></a><span class="n">mbti_count</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="s1">&#39;bar&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;skyblue&#39;</span><span class="p">)</span>
+</span><span id="__span-3-13"><a id="__codelineno-3-13" name="__codelineno-3-13" href="#__codelineno-3-13"></a><span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;우리 반의 MBTI 분포&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> <span class="n">fontweight</span><span class="o">=</span><span class="s1">&#39;bold&#39;</span><span class="p">)</span>
+</span><span id="__span-3-14"><a id="__codelineno-3-14" name="__codelineno-3-14" href="#__codelineno-3-14"></a><span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;MBTI 유형&#39;</span><span class="p">)</span>
+</span><span id="__span-3-15"><a id="__codelineno-3-15" name="__codelineno-3-15" href="#__codelineno-3-15"></a><span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;명수&#39;</span><span class="p">)</span>
+</span><span id="__span-3-16"><a id="__codelineno-3-16" name="__codelineno-3-16" href="#__codelineno-3-16"></a><span class="n">plt</span><span class="o">.</span><span class="n">xticks</span><span class="p">(</span><span class="n">rotation</span><span class="o">=</span><span class="mi">45</span><span class="p">)</span>
+</span><span id="__span-3-17"><a id="__codelineno-3-17" name="__codelineno-3-17" href="#__codelineno-3-17"></a><span class="n">plt</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>
+</span><span id="__span-3-18"><a id="__codelineno-3-18" name="__codelineno-3-18" href="#__codelineno-3-18"></a><span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</span></code></pre></div>
+<hr />
+<h2 id="_6">⚠️ 주의할 점<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
 <ol>
-<li><strong>파일명 확인</strong>: CSV 파일명이 코드의 <code>read_csv()</code> 안 이름과 정확히 일치해야 해요.</li>
-<li><strong>한글 깨짐</strong>: 한글이 깨지면 <code>pd.read_csv('파일명.csv', encoding='cp949')</code> 로 시도해보세요.</li>
+<li><strong>파일명 확인</strong>: 코드의 <code>'응␣답␣(1).csv'</code> 부분을 실제 파일명과 정확히 맞춰야 해요. (따옴표 안은 정확하게!)</li>
+<li><strong>한글 인코딩</strong>: 구글 폼이 한글로 되어 있으면, 파이썬이 자동으로 잘 읽어줍니다.</li>
 </ol>
 <hr />
-<h2 id="_5">✅ 점검하기<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h2 id="_7">✅ 점검하기<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
 <ol>
-<li>CSV 파일은 데이터를 어떻게 구분해서 저장하나요?</li>
+<li>
+<p><strong>CSV 파일은 언제 사용하나요?</strong>
+ <br />
+<details><summary>정답 확인</summary>
+   데이터가 표 형식일 때, 프로그래밍으로 분석하기 위해 사용합니다. 엑셀보다 가볍고 빠르거든요!
+   </details>
+</p>
+</li>
+<li>
+<p><strong>코드에서 <code>df['MBTI'].value_counts()</code>는 무엇을 하나요?</strong>
+ <br />
+<details><summary>정답 확인</summary>
+   MBTI 열에서 각 유형이 몇 명씩 있는지 세어줍니다. (빈도 계산)
+   </details>
+</p>
+</li>
 </ol>
-<details><summary>정답 확인</summary>콤마(,)로 구분해서 저장합니다.</details>
-
-<ol>
-<li><code>value_counts()</code>는 무엇을 계산하나요?</li>
-</ol>
-<details><summary>정답 확인</summary>각 값이 몇 번 나타나는지 빈도를 계산합니다.</details>
-
 <hr />
-<h2 id="_6">🔗 다음 장 미리보기<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
-<p>다음 장에서는 MBTI를 E/I, S/N 같은 특성별로 나눠서 더 재미있게 분석해볼 거예요! 🎉</p>
+<h2 id="_8">🚀 다음 장 미리보기<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<p>다음 장에서는 이 막대 그래프를 더 예쁘게 꾸미고, <strong>파이 차트</strong>로 비율을 보여주는 방법을 배워볼 거예요. 기대되시죠? 🎨</p>
 
 
 
